@@ -1,0 +1,276 @@
+body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #3f0524;
+    text-align: center;
+    padding: 0px;
+    margin: 0;
+    
+}
+h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    animation-name: pulse;
+    animation-duration: 3s;
+    animation-timing-function: linear;/* сценарий анимации между ключевыми кадрами */
+    animation-iteration-count: infinite;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #492543;
+    animation: float 4s linear infinite;
+}
+p {
+    font-size: 1em;
+    margin-bottom: 30px;
+    color: #444;
+}
+
+  .btn {
+    background: #e0d88d;
+    border-radius: 19px;
+    text-shadow: 3px 5px 3px #666666;
+    font-family: Courier New;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 16px;
+    text-decoration: none;
+    animation: colorPulse 5s ease-in-out infinite;
+   
+}
+  .btn:hover {
+    background: #eccbf2;
+    background-image: -webkit-linear-gradient(top, #eccbf2, #e36bc1);
+    background-image: -moz-linear-gradient(top, #eccbf2, #e36bc1);
+    background-image: -ms-linear-gradient(top, #eccbf2, #e36bc1);
+    background-image: -o-linear-gradient(top, #eccbf2, #e36bc1);
+    background-image: linear-gradient(to bottom, #eccbf2, #e36bc1);
+    text-decoration: none;
+  }
+.main{
+    background-image: url(https://interior-market.ru/upload/iblock/43e/6ze3whaqol5oi40a3vfcd552mdm0v3wq.webp);
+    background-repeat: no-repeat;  
+    background-size: cover;
+    min-height: 700px;
+    padding: 10px;
+    animation: backgroundMove 20s linear infinite;
+}
+.white-conteiner{
+background-color: #f4edf3c4;
+background-size: cover;
+min-height: 500px;
+margin: 50px;
+padding: 10px;
+border-radius: 50px;
+}
+.first{
+    font-family: 'Playfair Display';
+    color: #7d654a;
+    font-size: 70px;
+}
+img{
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 50px;
+    margin: 10px;
+    animation: slideHorizontal 3s ease-in-out infinite;
+}
+
+.section2{
+background-color: #f4edf3c4;
+background-size: cover;
+min-height: 500px;
+margin: 50px;
+padding: 10px;
+border-radius: 50px;
+display: flex;
+flex-direction: row;
+align-items: center;
+text-align: center;
+overflow-x: auto; 
+white-space: nowrap;
+
+}
+.achievement {
+    background-color: #a9957eab;
+    border-radius: 50px;
+    margin: 50px;
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;/*предотвращает сжатие блоков, оставляя их ширину фиксированной.*/
+    text-align: center;
+    animation:slideHorizontal 3s ease-in-out infinite ;
+max-width: 500px;
+max-height: 500px;
+
+}
+p{
+    word-wrap: break-word; /* Перенос слов */
+    white-space: normal; /* Обеспечивает перенос текста */
+    max-width: 100%; /
+}
+.achievement img {
+    max-width: 400px;
+    height: auto;
+    
+    border-radius: 10px;
+    animation: none;
+    
+}
+.scroll-container {
+    display: flex; /* Выстраивание элементов в одну строку для прокрутки */
+
+}
+.section2::-webkit-scrollbar {/*псевдоэлемент*/
+    height: 0; 
+    width: 0; 
+}
+
+
+.section3 {
+    background-color: #f4edf3c4;
+background-size: cover;
+min-height: 500px;
+margin: 50px;
+padding: 10px;
+border-radius: 50px;
+    font-family: 'Playfair Display', serif;
+    
+    
+
+}
+
+/* Заголовок */
+.section-title {
+    font-size:2.5em ;
+    color: #674f26;
+    margin-bottom: 30px;
+}
+
+.grid-container {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(2, minmax(200px, 1fr)); /* Адаптивные колонки */
+    justify-content: center;
+}
+
+.card {
+    background-color: #a9957eab;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    font-family: 'Playfair Display';
+    
+    
+}
+
+
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+.card-image img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 15px;
+    border-radius: 50%; 
+    object-fit: cover;
+    border-style: solid;
+    border-color: #7d654a;
+}
+
+
+.card h3 {
+    font-size: 1.8em;
+    color: #514121;
+    margin-bottom: 10px;
+    animation-name: pulse;
+    animation-duration: 3s;
+    animation-timing-function: linear;/* сценарий анимации между ключевыми кадрами */
+    animation-iteration-count: infinite;
+}
+
+.card p {
+    font-size: 1.3em;
+    color: #555;
+    line-height: 1.4;
+    
+}
+
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* Два столбца на планшетах */
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Один столбец на мобильных */
+    }
+}
+
+
+
+
+
+@keyframes pulse {
+    0%, 100% {/* Начальная и конечная точки анимации: размер элемента остаётся исходным (масштаб 1) */
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);/* На середине анимации (50%): элемент слегка увеличивается до 105% своего размера */
+    }
+}
+
+/* Анимация плавного покачивания для заголовка */
+@keyframes float {
+    0%, 100% {
+        
+    }
+    50% {
+        transform: translateY(-10px);/* элемент поднимается вверх на 10 пикселей по вертикали */
+    }
+}
+
+/* Анимация для медленного изменения фона */
+@keyframes backgroundMove {
+    0% {
+        background-position: 0% 0%;/* Фон находится в левом верхнем углу элемента (0% 0%) */
+    }
+    100% {
+        background-position: 100% 100%;/* Фон перемещается в правый нижний угол элемента (100% 100%) */
+    }
+}
+
+
+/* Постоянное лёгкое изменение цвета фона у кнопки */
+@keyframes colorPulse {
+    0%, 100% {
+        background-color: #e0d88d;
+    }
+    50% {
+        background-color: #7d654a;
+    }
+}
+
+
+@keyframes slideHorizontal {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(20px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
